@@ -1,0 +1,8 @@
+# SOCKS proxy 
+ssh -D 1337 -N -p3322 root@yoko.ukrtux.com
+
+# reverse proxy 
+ssh -R 10022:localhost:22 -p 3322 root@yoko.ukrtux.com
+
+# SSH back 
+ssh -p 10022 ivan@localhost
